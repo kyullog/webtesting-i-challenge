@@ -9,7 +9,9 @@
     "nodemon": "^1.18.11"
   },
   "scripts": {
-    "test": "jest --watch"
+    "test": "jest --watch",
+    "server": "nodemon index.js",
+    "start": "node index.js"
   },
   "dependencies": {
     "cors": "^2.8.5",
