@@ -9,5 +9,6 @@ function itemMaker(name, enhancement, durability) {
 module.exports = {
   oldSword: itemMaker("Battered Bastard Sword", 4, 17),
   magicSword: itemMaker("Sting", 16, 68),
-  oldShield: itemMaker("Wood Shield", 1, 45)
+  oldShield: itemMaker("Wood Shield", 1, 45),
+  ultimateSpear: itemMaker("Platinum Pike", 20, 100)
 };
