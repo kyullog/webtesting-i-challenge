@@ -5,9 +5,17 @@
   "repository": "git@github.com:kyullog/webtesting-i-challenge.git",
   "license": "MIT",
   "devDependencies": {
-    "jest": "^24.7.1"
+    "jest": "^24.7.1",
+    "nodemon": "^1.18.11"
   },
   "scripts": {
     "test": "jest --watch"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "helmet": "^3.16.0",
+    "knex": "^0.16.3",
+    "sqlite3": "^4.0.6"
   }
 }
