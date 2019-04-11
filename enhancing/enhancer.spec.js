@@ -1,12 +1,13 @@
 const enhancer = require("./enhancer.js");
 const {
+  stick,
   oldSword,
   magicSword,
   oldShield,
   ultimateSpear
 } = require("../items.js");
 
-const { repair, succeed, fail } = enhancer;
+const { repair, succeed, fail, get } = enhancer;
 // test away!
 describe("the repair function", () => {
   it("should return a new item with durability of 100", () => {
@@ -37,6 +38,15 @@ describe("the enhancement suite", () => {
         enhancement: 19,
         durability: 90
       });
+    });
+  });
+});
+describe("the get method", () => {
+  it("prepends and enhancement signifier to enhanced items", () => {
+    expect(get(stick)).toEqual({ ...stick });
+    expect(get(oldSword)).toEqual({
+      ...oldSword,
+      name: "[+4] Battered Bastard Sword"
     });
   });
 });
